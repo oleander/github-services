@@ -1,0 +1,34 @@
+Tickish
+==========
+
+Tickish is a very simple, light weight ticket tracker. The definition of simple is that you don't have to register to create a project.
+If you some how want to register an account, you can easily use Google, Twitter or any other Oauth provider.
+
+New functionality is added all the time, keep that in mind :)
+
+Visit http://tickish.com to get started today!
+
+Install Notes
+-------------
+
+1. Create a project at http://tickish.com
+2. Visit the project page, and click on the options link.
+3. Copy the API key from the dashboard and paste it into Github's Service Hook panel
+
+The commit message needs to contain the id of the issue you want to close.
+So if you for example want to close issue number 400 (look at the URL => http://tickish.com/issues/400) then your commit message need to look like this.
+=> Fixed the unsolvable bug #400
+If you leave out the issue number, the commit will be ignored by the Tickish API, like this
+=> Fixed the unsolvable bug
+
+When the commit is pushed to Github, the specified issue will be commented and closed using the commit message as the comment and your name as the creator.
+The work flow is identical to the Github issue tracker.
+
+Developer Notes
+---------------
+
+apikey
+  - Your Tickish API key.
+
+payload
+  - refer to docs/github_payload
