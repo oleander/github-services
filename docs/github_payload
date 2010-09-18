@@ -2,7 +2,7 @@
 
 {
   "data" => {
-	  "subscribers" => "" #CSV list
+	  "apikey" => "b5e83a36a3dca7c6428eacb0c913d33342299b82" #CSV list
   },
 
   "payload" => {
@@ -39,7 +39,7 @@
       },
       {
         "removed"   => [],
-        "message"   => "add more comments throughout",
+        "message"   => "add more comments throughout #45",
         "added"     => [],
         "timestamp" => "2007-10-10T00:50:39-07:00",
         "modified"  => ["lib/grit.rb", "lib/grit/commit.rb", "lib/grit/grit.rb"],
